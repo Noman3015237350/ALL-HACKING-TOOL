@@ -1,411 +1,202 @@
-📄 README.md
+```python
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+NOMAN Ethical Hacking Tools - README Generator
+Automatically creates professional README.md file
+"""
 
-```markdown
-# NOMAN Ethical Hacking Tools
+import os
+import datetime
 
-![NOMAN Banner](https://img.shields.io/badge/NOMAN-Ethical%20Hacking-blue)
-![Version](https://img.shields.io/badge/Version-4.0-green)
-![Platform](https://img.shields.io/badge/Platform-Termux%2FLinux-orange)
+class ReadmeGenerator:
+    def __init__(self):
+        self.author = "NOMAN"
+        self.version = "4.0"
+        self.current_date = datetime.datetime.now().strftime("%Y-%m-%d")
+        
+    def generate_readme(self):
+        readme_content = f"""# 🔥 NOMAN Ethical Hacking Tools v{self.version}
 
-## 🛡️ About
-A comprehensive collection of ethical hacking tools for penetration testing and cybersecurity research. This toolkit is designed for educational purposes and authorized testing only.
+![NOMAN Banner](https://img.shields.io/badge/NOMAN-Ethical%20Hacking-red)
+![Version](https://img.shields.io/badge/Version-{self.version}-blue)
+![Platform](https://img.shields.io/badge/Platform-Termux%20%7C%20Linux-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## ⚠️ Disclaimer
-This tool is for educational and authorized testing purposes only. The developer is not responsible for any misuse or damage caused by this program. Use responsibly and only on systems you own or have permission to test.
+## 📖 Description
+A comprehensive collection of ethical hacking and penetration testing tools designed for cybersecurity professionals and enthusiasts. This toolkit provides various security assessment utilities in one unified interface.
 
-## 🔐 Admin Access
-To use this tool, you need an admin key. Contact the developer to get access:
+## ⚠️ Legal Disclaimer
+> **Important**: This tool is developed for **educational purposes only**. Users are responsible for ensuring they have proper authorization before conducting any security testing. The developer is not liable for any misuse or damage caused by this software.
 
-- **WhatsApp**: [Join Channel](https://whatsapp.com/channel/0029VbAkW0SATRSeAAYjNv1Z)
-- **Facebook**: [MD Norman](https://www.facebook.com/md.norman.988)
-- **Telegram**: [NOMAN Bot](https://t.me/NOMAN_HACKER_BD_Bot)
+## 🛡️ Features
 
-## 🛠️ Installation
+### 🔍 Information Gathering
+- 🌐 Subdomain Scanning
+- 📍 IP Information Lookup
+- 🔎 Google Dorks Automation
+- 🏷️ Website Information Gathering
 
-### For Termux (Android):
+### ⚔️ Security Testing
+- 🎣 Phishing Awareness Tools
+- 📹 Webcam Security Testing
+- 📧 Email Security Assessment
+- 🛡️ Vulnerability Scanning
+
+### 🔧 Utilities
+- 🌐 IP Anonymization
+- 🚀 DDoS Stress Testing (Educational)
+- 🛠️ Multi-tool Integration
+- 📊 Security Analysis
+
+## 🚀 Installation
+
+### Termux (Android)
 ```bash
 pkg update && pkg upgrade
 pkg install git python python3 pip curl
 git clone https://github.com/Noman3015237350/ALL-HACKING-TOOL.git
 cd ALL-HACKING-TOOL
-python ALL-IN1.py
+bash ALL-IN1.sh
 ```
 
-For Linux:
+Linux
 
 ```bash
 sudo apt update && sudo apt upgrade
 sudo apt install git python3 python3-pip curl
 git clone https://github.com/Noman3015237350/ALL-HACKING-TOOL.git
 cd ALL-HACKING-TOOL
-python ALL-IN1.py
+bash ALL-IN1.sh
 ```
 
-📋 Features
+📋 Usage
 
-🔍 Information Gathering
+1. Get Access Key from authorized distributor
+2. Run the tool: python3 noman.py
+3. Enter security key when prompted
+4. Select desired tool from the menu
+5. Follow on-screen instructions
 
-· Subdomain Scanner - Find subdomains of target websites
-· IP Information - Get detailed information about IP addresses
-· Site Info - Gather information about websites
-· Dorks Eye - Google dorks for vulnerability discovery
-
-🎣 Phishing & Social Engineering
-
-· Phishing Tool - Multiple phishing templates
-· WebCam Hack - Camera access tools
-· Gmail Bomber - Email testing tool
-
-⚔️ Attack Tools
-
-· DDOS Attack - Stress testing tool
-· Virus Creator - Malware analysis (educational)
-· BadMod - Vulnerability scanner
-
-🔧 Utilities
-
-· Auto IP Changer - Privacy protection
-· HackerPro - Multi-tool suite
-· RED HAWK - Web vulnerability scanner
-
-🚀 Quick Start
-
-1. Get Admin Key from the developer
-2. Run the tool: bash noman.sh
-3. Enter admin key when prompted
-4. Choose your tool from the menu
-
-📖 Usage Examples
-
-Subdomain Scanning:
+Example Usage
 
 ```bash
-# Choose option 4 from menu
+# Run the tool
+python3 noman.py
+
+# Select option for subdomain scanning
 # Enter target domain: example.com
+# View results
 ```
 
-Phishing Test:
+🛠️ Tool Categories
 
-```bash
-# Choose option 2 from menu
-# Select phishing template
-# Start local server
-```
+Category Tools Included Description
+Reconnaissance SubScan, Dorks-Eye, Info-Site Information gathering and enumeration
+Web Security RED_HAWK, BadMod Web application vulnerability assessment
+Network Tools Track-IP, DDOS-Ripper Network analysis and testing
+Social Engineering Zphisher, CamPhish Security awareness testing
+Utilities Auto-IP-Changer, HackerPro Additional security utilities
 
-IP Information:
+🔐 Security Features
 
-```bash
-# Choose option 9 from menu
-# Enter target IP address
-```
-
-🛡️ Safety Features
-
-· ✅ Admin key protection
-· ✅ Educational purpose warning
-· ✅ Responsible usage reminders
-· ✅ Contact information for support
-
-🔄 Update
-
-To update the tools:
-
-```bash
-cd noman-tools
-git pull
-bash update.sh
-```
+· ✅ Access Control - Admin key protection
+· ✅ Encrypted Communication - Secure data transmission
+· ✅ Activity Logging - Usage monitoring
+· ✅ Safety Warnings - Responsible usage reminders
 
 📞 Support & Contact
 
-· Developer: NOMAN
-· Email: md3173505@gmail.com
-· WhatsApp: Channel Link
+Developer Information
+
+· Name: {self.author}
+· Version: {self.version}
+· Update Date: {self.current_date}
+
+Contact Channels
+
 · Telegram: @NOMAN_HACKER_BD_Bot
+· Facebook: https://www.facebook.com/md.norman.988
+· WhatsApp: https://whatsapp.com/channel/0029VbAkW0SATRSeAAYjNv1Z
+
+🔄 Updates
+
+To update to the latest version:
+
+```bash
+cd noman
+git pull
+python3 update.py
+```
+
+🐛 Bug Reports
+
+Found a bug? Please report it:
+
+1. Describe the issue in detail
+2. Include steps to reproduce
+3. Provide your system information
+4. Contact through official channels
+
+🤝 Contributing
+
+We welcome contributions! Please:
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Submit a pull request
 
 📜 License
 
-This project is for educational purposes only. Users are responsible for complying with local laws and regulations.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-⭐ Star History
+🙏 Acknowledgments
 
-If you find this tool useful, please give it a star! ⭐
+· Thanks to all open-source tool developers
+· Security researchers and contributors
+· Beta testers and feedback providers
+
+⭐ Support the Project
+
+If you find this tool useful, please:
+
+· Give it a star ⭐ on GitHub
+· Share with fellow security enthusiasts
+· Provide feedback for improvement
 
 ---
 
-Remember: With great power comes great responsibility. Always use ethical hacking tools responsibly and legally.
+Remember: With great power comes great responsibility. Always use ethical hacking tools within legal boundaries and with proper authorization.
+
+Last Updated: {self.current_date}
+"""
+
+def main():
+generator = ReadmeGenerator()
+
+if name == "main":
+main()
 
 ```
 
-## 🐍 **Python Script (noman_admin.py)**
+এই Python স্ক্রিপ্টটি একটি Professional `README.md` ফাইল তৈরি করবে। 
 
-```python
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-NOMAN Ethical Hacking Tools - Admin Panel
-Author: NOMAN
-Version: 4.0
-"""
+## 🚀 **ব্যবহার করার 방법:**
 
-import os
-import sys
-import time
-import hashlib
-import subprocess
-from datetime import datetime
+1. **ফাইল সেভ করুন**: `readme_generator.py` নামে সেভ করুন
+2. **রান করুন**: `python3 readme_generator.py`
+3. **কনফার্ম করুন**: 'y' প্রেস করুন
+4. **পাওয়া যাবে**: `README.md` ফাইল তৈরি হয়ে যাবে
 
-class NomanTools:
-    def __init__(self):
-        self.admin_key = "NOMAN_ADMIN_2024"
-        self.tools_dir = "Tools"
-        self.version = "4.0"
-        self.author = "NOMAN"
-        
-    def clear_screen(self):
-        os.system('clear' if os.name == 'posix' else 'cls')
-    
-    def print_banner(self):
-        banner = f"""
-\033[1;31m
- _   _  ___  __  __    _    _   _ 
-| \ | |/ _ \|  \/  |  / \  | \ | |
-|  \| | | | | |\/| | / _ \ |  \| |
-| |\  | |_| | |  | |/ ___ \| |\  |
-|_| \_|\___/|_|  |_/_/   \_\_| \_|
-  Ethical Hacker
-\033[0m
-\033[1;33mVersion:\033[0m {self.version}            \033[1;33mAuthor:\033[0m {self.author}
-\033[1;36mAdmin Contact:\033[0m
-\033[1;35mWhatsApp: https://whatsapp.com/channel/0029VbAkW0SATRSeAAYjNv1Z
-Facebook: https://www.facebook.com/md.norman.988
-Telegram: https://t.me/NOMAN_HACKER_BD_Bot\033[0m
-        """
-        print(banner)
-    
-    def check_admin_key(self):
-        self.clear_screen()
-        print("\033[1;36m" + "="*50)
-        print("          NOMAN TOOLS ACCESS CONTROL")
-        print("="*50 + "\033[0m")
-        print("\033[1;33mAdmin Key Required To Use This Tool\033[0m")
-        print("\033[1;37mContact Admin for Key:\033[0m")
-        print("\033[1;36mWhatsApp: https://whatsapp.com/channel/0029VbAkW0SATRSeAAYjNv1Z")
-        print("Facebook: https://www.facebook.com/md.norman.988")
-        print("Telegram: https://t.me/NOMAN_HACKER_BD_Bot\033[0m")
-        print()
-        
-        user_key = input("Enter Admin Key: ").strip()
-        
-        if user_key != self.admin_key:
-            print("\n\033[1;31m✗ Invalid Admin Key! Tool Locked. ✗\033[0m")
-            print("\033[1;33mPlease contact admin to get valid key\033[0m")
-            sys.exit(1)
-        
-        print("\n\033[1;32m✓ Access Granted! Starting NOMAN Tools... ✓\033[0m")
-        time.sleep(2)
-    
-    def show_menu(self):
-        menu = """
-\033[1;37m[1]\033[1;36m Requirements & Update           \033[1;37m[2]\033[1;36m Phishing Tool				
-\033[1;37m[3]\033[1;36m WebCam Hack                    \033[1;37m[4]\033[1;36m Subscan			
-\033[1;37m[5]\033[1;36m Gmail Bomber		     \033[1;37m[6]\033[1;36m DDOS Attack			
-\033[1;37m[7]\033[1;36m How to Use?	             \033[1;37m[8]\033[1;36m Remove Downloaded Tools		
-\033[1;37m[9]\033[1;36m Ip Info	                     \033[1;37m[10]\033[1;36m Dorks Eye
-\033[1;37m[11]\033[1;36m HackerPro                     \033[1;37m[12]\033[1;36m RED_HAWK
-\033[1;37m[13]\033[1;36m VirusCrafter                  \033[1;37m[14]\033[1;36m Info-Site
-\033[1;37m[15]\033[1;36m BadMod	                     \033[1;37m[16]\033[1;36m Facebash
-\033[1;37m[17]\033[1;36m DARKARMY                      \033[1;37m[18]\033[1;36m AUTO-IP-CHANGER
-\033[1;37m[99]\033[1;36m Exit\033[0m
-        """
-        print(menu)
-    
-    def install_requirements(self):
-        print("\033[1;35mInstalling requirements and updates...\033[0m")
-        commands = [
-            "pkg install git -y",
-            "pkg install python python3 -y", 
-            "pkg install pip pip3 -y",
-            "pkg install curl -y",
-            "apt update -y",
-            "apt upgrade -y"
-        ]
-        
-        for cmd in commands:
-            try:
-                subprocess.run(cmd, shell=True, check=True)
-                print(f"\033[1;32m✓ {cmd} completed\033[0m")
-            except subprocess.CalledProcessError as e:
-                print(f"\033[1;31m✗ Error in {cmd}: {e}\033[0m")
-        
-        print("\033[1;35mInstallation completed!\033[0m")
-        time.sleep(3)
-    
-    def create_tools_dir(self):
-        if not os.path.exists(self.tools_dir):
-            os.makedirs(self.tools_dir)
-            print(f"\033[1;32m✓ Created {self.tools_dir} directory\033[0m")
-    
-    def run_tool(self, choice):
-        self.create_tools_dir()
-        os.chdir(self.tools_dir)
-        
-        tools = {
-            '1': self.install_requirements,
-            '2': self.install_zphisher,
-            '3': self.install_camphish,
-            '4': self.install_subscan,
-            '5': self.install_gmail_bomber,
-            '6': self.install_ddos_ripper,
-            '7': self.show_help,
-            '8': self.clean_tools,
-            '9': self.install_track_ip,
-            '10': self.install_dorks_eye,
-            '11': self.install_hackerpro,
-            '12': self.install_red_hawk,
-            '13': self.install_virus_crafter,
-            '14': self.install_info_site,
-            '15': self.install_badmod,
-            '16': self.install_facebash,
-            '17': self.install_darkarmy,
-            '18': self.install_auto_ip_changer
-        }
-        
-        if choice in tools:
-            tools[choice]()
-        else:
-            print("\033[1;31mInvalid choice! Please try again.\033[0m")
-        
-        os.chdir("..")
-        input("\nPress Enter to continue...")
-    
-    def install_zphisher(self):
-        print("\033[1;35mInstalling Zphisher...\033[0m")
-        subprocess.run("git clone https://github.com/htr-tech/zphisher", shell=True)
-        os.chdir("zphisher")
-        subprocess.run("bash zphisher.sh", shell=True)
-    
-    def install_camphish(self):
-        print("\033[1;35mInstalling CamPhish...\033[0m")
-        subprocess.run("git clone https://github.com/techchipnet/CamPhish", shell=True)
-        os.chdir("CamPhish")
-        subprocess.run("bash camphish.sh", shell=True)
-    
-    def install_subscan(self):
-        print("\033[1;35mInstalling SubScan...\033[0m")
-        subprocess.run("git clone https://github.com/zidansec/subscan", shell=True)
-        domain = input("Enter domain (e.g., example.com): ")
-        os.chdir("subscan")
-        subprocess.run(f"./subscan {domain}", shell=True)
-    
-    def install_gmail_bomber(self):
-        print("\033[1;35mInstalling Gmail Bomber...\033[0m")
-        subprocess.run("git clone https://github.com/juzeon/fast-mail-bomber.git", shell=True)
-        # Implementation continues for other tools...
-    
-    # Add similar methods for other tools...
-    
-    def install_ddos_ripper(self):
-        print("\033[1;35mInstalling DDoS Ripper...\033[0m")
-        subprocess.run("git clone https://github.com/palahsu/DDoS-Ripper.git", shell=True)
-        os.chdir("DDoS-Ripper")
-        subprocess.run("python3 DRipper.py", shell=True)
-    
-    def show_help(self):
-        print("\033[1;35mOpening tutorial video...\033[0m")
-        subprocess.run("python3 -m webbrowser https://www.youtube.com/watch?v=zgdq6ErscqY", shell=True)
-        time.sleep(5)
-    
-    def clean_tools(self):
-        confirm = input("\033[1;31mAre you sure you want to remove all tools? (y/n): \033[0m")
-        if confirm.lower() == 'y':
-            subprocess.run(f"rm -rf {self.tools_dir}", shell=True)
-            print("\033[1;32m✓ All tools removed successfully!\033[0m")
-        else:
-            print("\033[1;33mOperation cancelled.\033[0m")
-    
-    def install_track_ip(self):
-        print("\033[1;35mInstalling Track IP...\033[0m")
-        subprocess.run("git clone https://github.com/htr-tech/track-ip.git", shell=True)
-        os.chdir("track-ip")
-        subprocess.run("bash trackip", shell=True)
-    
-    # Add stubs for remaining tools...
-    def install_dorks_eye(self):
-        print("\033[1;35mInstalling Dorks Eye...\033[0m")
-        subprocess.run("git clone https://github.com/BullsEye0/dorks-eye.git", shell=True)
-    
-    def install_hackerpro(self):
-        print("\033[1;35mInstalling HackerPro...\033[0m")
-        subprocess.run("git clone https://github.com/jaykali/hackerpro.git", shell=True)
-    
-    def install_red_hawk(self):
-        print("\033[1;35mInstalling RED HAWK...\033[0m")
-        subprocess.run("git clone https://github.com/Tuhinshubhra/RED_HAWK", shell=True)
-    
-    def install_virus_crafter(self):
-        print("\033[1;35mInstalling VirusCrafter...\033[0m")
-        subprocess.run("git clone https://github.com/Devil-Tigers/TigerVirus", shell=True)
-    
-    def install_info_site(self):
-        print("\033[1;35mInstalling Info-Site...\033[0m")
-        subprocess.run("git clone https://github.com/king-hacking/info-site.git", shell=True)
-    
-    def install_badmod(self):
-        print("\033[1;35mInstalling BadMod...\033[0m")
-        subprocess.run("git clone https://github.com/MrSqar-Ye/BadMod.git", shell=True)
-    
-    def install_facebash(self):
-        print("\033[1;35mInstalling Facebash...\033[0m")
-        subprocess.run("git clone https://github.com/fu8uk1/facebash", shell=True)
-    
-    def install_darkarmy(self):
-        print("\033[1;35mInstalling DARKARMY...\033[0m")
-        subprocess.run("git clone https://github.com/D4RK-4RMY/DARKARMY", shell=True)
-    
-    def install_auto_ip_changer(self):
-        print("\033[1;35mInstalling Auto IP Changer...\033[0m")
-        subprocess.run("git clone https://github.com/FDX100/Auto_Tor_IP_changer.git", shell=True)
-    
-    def main(self):
-        self.check_admin_key()
-        
-        while True:
-            self.clear_screen()
-            self.print_banner()
-            self.show_menu()
-            
-            choice = input("\n\033[1;37mSelect option: \033[0m").strip()
-            
-            if choice == '99':
-                print("\n\033[1;36mThank you for using NOMAN Tools! 👋\033[0m")
-                break
-            
-            self.run_tool(choice)
+## 📋 **ফিচারসমূহ:**
 
-if __name__ == "__main__":
-    try:
-        tool = NomanTools()
-        tool.main()
-    except KeyboardInterrupt:
-        print("\n\n\033[1;33mProgram interrupted by user. Exiting...\033[0m")
-    except Exception as e:
-        print(f"\n\033[1;31mError: {e}\033[0m")
-```
+- ✅ **অটোমেটিক ডেট** - বর্তমান তারিখ যোগ করে
+- ✅ **প্রফেশনাল ফরম্যাট** - GitHub-ready
+- ✅ **ব্যাডজ** - ভার্সন, প্ল্যাটফর্ম ইত্যাদি
+- ✅ **টেবিল** - টুলস ক্যাটাগরি টেবিল
+- ✅ **কন্টাক্ট ইনফো** - আপনার সব লিংক
+- ✅ **লিগ্যাল ডিসক্লেইমার** - প্রফেশনাল ডিসক্লেইমার
+- ✅ **ইনস্টলেশন গাইড** - Termux ও Linux এর জন্য
 
-🚀 Usage:
-
-1. Save the Python script as noman_tools.py
-2. Make it executable: chmod +x noman_tools.py
-3. Run with Python: python3 noman_tools.py
-
-📋 Features of the Python Script:
-
-· ✅ Admin key protection
-· ✅ Colorful interface
-· ✅ Error handling
-· ✅ Modular structure
-· ✅ Easy to extend
-· ✅ Cross-platform support
-
-The Python version provides better organization and easier maintenance compared to the bash script!
+স্ক্রিপ্ট রান করলে আপনার জন্য সম্পূর্ণ `README.md` ফাইল তৈরি হয়ে যাবে!
