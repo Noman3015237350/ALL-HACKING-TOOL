@@ -26,9 +26,9 @@ To use this tool, you need an admin key. Contact the developer to get access:
 ```bash
 pkg update && pkg upgrade
 pkg install git python python3 pip curl
-git clone https://github.com/your-repo/noman-tools.git
-cd noman-tools
-bash install.sh
+git clone https://github.com/Noman3015237350/ALL-HACKING-TOOL.git
+cd ALL-HACKING-TOOL
+python ALL-IN1.py
 ```
 
 For Linux:
@@ -36,9 +36,9 @@ For Linux:
 ```bash
 sudo apt update && sudo apt upgrade
 sudo apt install git python3 python3-pip curl
-git clone https://github.com/your-repo/noman-tools.git
-cd noman-tools
-bash install.sh
+git clone https://github.com/Noman3015237350/ALL-HACKING-TOOL.git
+cd ALL-HACKING-TOOL
+python ALL-IN1.py
 ```
 
 📋 Features
