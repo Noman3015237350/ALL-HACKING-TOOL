@@ -1,5 +1,12 @@
 import os
 import datetime
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+NOMAN Ethical Hacking Tools - README Generator
+Automatically creates professional README.md file
+"""
 
 class ReadmeGenerator:
     def __init__(self):
