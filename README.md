@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-"""
-NOMAN Ethical Hacking Tools - README Generator
-Automatically creates professional README.md file
-"""
-
 import os
 import datetime
 
